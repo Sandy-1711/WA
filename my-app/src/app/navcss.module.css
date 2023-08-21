@@ -1,0 +1,101 @@
+.navbar {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    height: 10dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: calc(100dvw / 103);
+    background: transparent;
+    border-bottom: 1px solid rgb(174, 171, 171, 0.2);
+    color: white;
+    background-color: #272839;
+    gap: calc(3dvw);
+}
+
+.navbar ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(4dvw);
+    list-style: none;
+    margin-left: 20rem;
+}
+
+.navbar ul li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li a {
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.navbar ul li a::before {
+    content: '';
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 1.5px;
+    width: 0%;
+    position: absolute;
+    bottom: -1px;
+    background-color: white;
+}
+
+.navbar ul li:hover a::before {
+    width: 100%;
+}
+
+.navbar button {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.navbar button:hover {
+
+    background-color: white;
+    color: #272839;
+}
+
+.navbar form input {
+    padding: 0.5rem 0.75rem;
+    outline: none;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.navbar form button {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.logo {
+    position: absolute;
+    height: 25px;
+    margin-right: 100px;
+    left: 10%;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
