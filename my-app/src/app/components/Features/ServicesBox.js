@@ -13,19 +13,19 @@ export default function ServicesBox() {
             id: 2,
             imagesrc: '/graphic-designing.png',
             name: 'Graphic Designing',
-            desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, q',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, q',
         },
         {
             id: 3,
             imagesrc: '/digital-marketing.png',
             name: 'Digital Marketing',
-            desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui',
         },
         {
             id: 4,
             imagesrc: '/seo-content-writing.png',
             name: 'SEO & Content Writing',
-            desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, .',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, .',
         },
         {
             id: 5,
@@ -37,7 +37,7 @@ export default function ServicesBox() {
             id: 6,
             imagesrc: '/tv-advertisement.png',
             name: 'Product Photography',
-            desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, .',
+            desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, .',
         },
         {
             id: 7,
@@ -61,11 +61,11 @@ export default function ServicesBox() {
                 <Image loading='lazy' height={100} width={100} src={element.imagesrc} href={element.name} />
                 <p>{element.name}</p>
             </div>
-            
+
             <div className={featurecss.servicesCardBack}>{element.desc}</div>
         </div>)
     }
-    return <div id='serviceBox'  className={featurecss.servicesBox}>
+    return <div id='serviceBox' className={featurecss.servicesBox}>
         {data.map(createCard)}
 
     </div>

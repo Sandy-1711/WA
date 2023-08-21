@@ -2,7 +2,7 @@
     position: absolute;
     z-index: 9999;
     top: 0;
-    height: 10dvh;
+    height: 10vh;
     width: 100dvw;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@
     background: transparent;
     border-bottom: 1px solid rgb(174, 171, 171, 0.2);
     color: white;
-    background-color: #272839;
+    background-color: transparent;
     gap: calc(3dvw);
 }
 

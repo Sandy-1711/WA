@@ -3,7 +3,7 @@ import herocss from '../../styles/Hero/hero.module.css'
 
 export default function Hero() {
     return (
-        <div className={herocss.heropage}>
+        <div id='hero' className={herocss.heropage}>
             <div className={herocss.pattern1}></div>
             <div className={herocss.pattern2}></div>
             <div className={herocss.pattern3}></div>
